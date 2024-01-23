@@ -67,7 +67,7 @@ end
     @(posedge CLK);
     
     // Apply inputs and display the results
-    #1000 $display("Test Case 2: A = %b, B = %b, Cin = %b, Sum = %b, Cout = %b", A, B, Cin, Sum, Cout);
+	  #1000 $display("Test Case 3: A = %b, B = %b, Cin = %b, Sum = %b, Cout = %b", A, B, Cin, Sum, Cout);
 
     // Add more test cases as needed
 
