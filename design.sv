@@ -17,8 +17,8 @@ always@ (posedge clk)
           Sum[i] <= A[i] ^ B[i] ^ Cout[i];
           Cout[i+1] <= (((A[i] ^ B[i]) & Cout[i]) || (A[i] & B[i]));
         end
-      if (Cout[4]==1)
+	  if (Cout[i]==1)
 	      Sum[i]<=1;
-      else Sum[4]<=0;	
+	  else Sum[i]<=0;	
 end
 endmodule
